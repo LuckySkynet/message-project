@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/**
+ * CoreUI - Open Source Bootstrap Admin Template
+ */
+
+// Core variables and mixins
+@import "scss/bootstrap-variables";
+@import "scss/bootstrap_src/variables";
+@import "scss/custom-variables";
+@import "scss/bootstrap_src/mixins";
+@import "scss/core/mixins";
+// Reset and dependencies
+@import "scss/bootstrap_src/normalize";
+@import "scss/bootstrap_src/print";
+// Core CSS
+@import "scss/bootstrap_src/reboot";
+@import "scss/bootstrap_src/type";
+@import "scss/bootstrap_src/images";
+@import "scss/bootstrap_src/code";
+@import "scss/bootstrap_src/grid";
+@import "scss/bootstrap_src/tables";
+@import "scss/bootstrap_custom/tables";
+@import "scss/bootstrap_src/forms";
+@import "scss/bootstrap_src/buttons";
+@import "scss/bootstrap_custom/buttons";
+// Components
+@import "scss/bootstrap_src/transitions";
+@import "scss/bootstrap_src/dropdown";
+@import "scss/bootstrap_custom/dropdown";
+@import "scss/bootstrap_src/button-group";
+@import "scss/bootstrap_src/input-group";
+@import "scss/bootstrap_custom/input-group";
+//@import "scss/custom-forms";
+@import "scss/bootstrap_src/nav";
+@import "scss/bootstrap_custom/nav";
+@import "scss/bootstrap_src/navbar";
+@import "scss/bootstrap_custom/navbar";
+@import "scss/bootstrap_src/card";
+@import "scss/bootstrap_custom/card";
+@import "scss/bootstrap_src/breadcrumb";
+@import "scss/bootstrap_custom/breadcrumb";
+@import "scss/bootstrap_src/pagination";
+@import "scss/bootstrap_src/badge";
+@import "scss/bootstrap_custom/badge";
+//@import "scss/jumbotron";
+@import "scss/bootstrap_src/alert";
+@import "scss/bootstrap_src/progress";
+@import "scss/bootstrap_custom/progress";
+@import "scss/bootstrap_src/media";
+@import "scss/bootstrap_src/list-group";
+@import "scss/bootstrap_src/responsive-embed";
+@import "scss/bootstrap_src/close";
+// Components w/ JavaScript
+@import "scss/bootstrap_src/modal";
+@import "scss/bootstrap_custom/modal";
+@import "scss/bootstrap_src/tooltip";
+@import "scss/bootstrap_src/popover";
+@import "scss/bootstrap_src/carousel";
+// Utility classes
+@import "scss/bootstrap_src/utilities";
+// Vendors Styles
+@import "scss/vendors/vendors";
+// CoreUI Styles
+// Additional typography
+@import "scss/core/typography";
+// Animations
+@import "scss/core/animate";
+// Core files
+@import "scss/core/grid";
+@import "scss/core/layout";
+@import "scss/core/navigation";
+@import "scss/core/aside";
+@import "scss/core/loading";
+@import "scss/core/widgets";
+@import "scss/core/footer";
+@import "scss/core/buttons";
+@import "scss/core/others";
+@import "scss/core/breadcrumb-menu";
+@import "scss/core/avatars";
+@import "scss/core/callout";
+@import "scss/core/switches";
+@import "scss/core/charts";
+@import "scss/core/utilities-border";
+// Temporary fixes
+@import "scss/core/temp";
+// Mobile View
+@import "scss/core/mobile";
+// Right-to-left
+@import "scss/core/rtl";
+// Custom styles
+@import "scss/custom";
+// Toastr Core
+@import "../node_modules/ng2-toastr/bundles/ng2-toastr.min.css";

@@ -1,0 +1,31 @@
+<div class="sidebar">
+  <nav class="sidebar-nav">
+    <ul class="nav">
+      <li class="nav-item">
+        <!--注意：routerLink若加上/，表示项目根路径-->
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['message']"><i class="icon-fire"></i> Message <span class="badge badge-info">NEW</span></a>
+      </li>
+
+      <li class="divider"></li>
+      <li class="nav-title">
+        TODO NOTYET
+      </li>
+      <li class="nav-item nav-dropdown" routerLinkActive="open" dropdown>
+        <a class="nav-link nav-dropdown-toggle" dropdownToggle>
+          <i class="icon-puzzle"></i> Components
+        </a>
+        <ul class="nav-dropdown-items" *dropdownMenu>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/buttons']"><i class="icon-puzzle"></i> Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/social-buttons']"><i class="icon-puzzle"></i> Social Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/cards']"><i class="icon-puzzle"></i> Cards</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
