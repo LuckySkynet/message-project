@@ -5,10 +5,13 @@ import { WorkspaceRoutingModule } from './workspace.routing';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
-// 页面布局
+// Layout
 import { FooterComponent } from '../footer/footer.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { TopmenuComponent } from '../topmenu/topmenu.component';
+
+// Directive
+import { SIDEBAR_DIRECTIVE } from '../shared/sidebar.directive';
 
 @NgModule({
   imports: [
@@ -20,7 +23,8 @@ import { TopmenuComponent } from '../topmenu/topmenu.component';
     WorkspaceComponent,
     FooterComponent,
     SidebarComponent,
-    TopmenuComponent
+    TopmenuComponent,
+    SIDEBAR_DIRECTIVE
   ]
 })
 export class WorkspaceModule { }

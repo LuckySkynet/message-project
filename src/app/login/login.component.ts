@@ -2,11 +2,12 @@ import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { ToastsManager } from 'ng2-toastr/ng2-toastr';
-
+import { zoomIn } from '../animations/zoom-in';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  animations: [zoomIn]
 })
 export class LoginComponent implements OnInit {
 

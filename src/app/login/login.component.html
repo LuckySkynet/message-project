@@ -1,4 +1,4 @@
-<div class="app flex-row align-items-center">
+<div class="app flex-row align-items-center" [@zoomIn]="in">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8">
@@ -31,7 +31,7 @@
                 <h2>Sign up</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                   magna aliqua.</p>
-                <button type="button" class="btn btn-primary active mt-1">Register Now!</button>
+                <button type="button" class="btn btn-primary active mt-1" (click)="regist()">Register Now!</button>
               </div>
             </div>
           </div>
