@@ -20,7 +20,9 @@ export class MessageService {
     headers.append('Content-Type', 'application/json');
     let options = new RequestOptions({ headers: headers });
     return this.http.get(this.phonesURL, options)
-      .map((res: Response) => res.json().data)
+      .map((res: Response) => {
+        return res.json().data
+      })
   }
 
 }

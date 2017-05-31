@@ -9,6 +9,7 @@ import { P404Component } from './pages/p404/p404.component';
 import { LoingRoutingModule } from './app.routing';
 //Dropdown Module
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 import { RegistComponent } from './regist/regist.component';
 //Toastr Module
 import { ToastModule } from 'ng2-toastr/ng2-toastr';
@@ -29,7 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoingRoutingModule,
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
-    ToastModule.forRoot()
+    ToastModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

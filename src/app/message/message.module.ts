@@ -9,6 +9,9 @@ import { MessageRoutingModule } from './message.routing';
 import { CKEditorModule } from 'ng2-ckeditor';
 import { MessageService } from './message-service/message.service';
 import { PhoneData } from '../mock-data/phone-mock';
+//Datepicker Module
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -16,7 +19,8 @@ import { PhoneData } from '../mock-data/phone-mock';
     MessageRoutingModule,
     FormsModule,
     CKEditorModule,
-    InMemoryWebApiModule.forRoot(PhoneData)
+    InMemoryWebApiModule.forRoot(PhoneData),
+    Ng2SmartTableModule
   ],
   declarations: [
     MessagePageComponent,
