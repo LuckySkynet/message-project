@@ -15,7 +15,5 @@ export class MessagePageComponent implements OnInit {
     private messageService: MessageService
   ) { }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() { }
 }

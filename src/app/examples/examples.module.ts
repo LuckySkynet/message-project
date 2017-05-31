@@ -12,6 +12,7 @@ import { ServerSmttableComponent } from './smttable/server-smttable.component';
 import { BaseSmttableComponent } from './smttable/base-smttable.component';
 import { SmttableService } from './smttable/smttable.service';
 import { UserData } from '../mock-data/user-mock';
+import { FileUploadModule } from 'ng2-file-upload';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { UserData } from '../mock-data/user-mock';
     ExampleRoutingModule,
     Ng2SmartTableModule,
     TabsModule.forRoot(),
-    InMemoryWebApiModule.forRoot(UserData)
+    InMemoryWebApiModule.forRoot(UserData),
+    FileUploadModule
   ],
   declarations: [
     FileuploadComponent,
