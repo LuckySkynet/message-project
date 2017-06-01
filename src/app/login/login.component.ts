@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
     public vcr: ViewContainerRef,
     public toastr: ToastsManager
   ) {
-    this.toastr.setRootViewContainerRef(vcr);
+    toastr.setRootViewContainerRef(vcr);
   }
 
   ngOnInit() {

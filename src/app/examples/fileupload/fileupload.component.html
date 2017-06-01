@@ -4,6 +4,28 @@
       <div class="card">
         <div class="card-header">
           File Upload
+          <hr>
+          <form class="form-inline">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon">Start</div>
+                <input type="text" name="start" class="form-control" placeholder="Search...">
+                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+              </div>
+              <div>
+                <strong style="color:gray"> — </strong>
+              </div>
+              <div class="input-group">
+                <div class="input-group-addon">End</div>
+                <input type="text" name="end" class="form-control" placeholder="Search...">
+                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+              </div>
+            </div>
+            &nbsp;&nbsp;
+            <div class="form-group">
+              <button type="button" class="btn btn-info" style="display:block;margin:10px">Search</button>
+            </div>
+          </form>
         </div>
         <div class="card-block">
           <div class="row">
@@ -28,7 +50,7 @@
                 <tbody>
                   <tr *ngFor="let item of uploader.queue">
                     <td><strong>{{ item?.file?.name}}</strong></td>
-                    <td *ngIf="uploader.options.isHTML5" nowrap>{{item?.file?.size/1024/1024 | number:'.2'}} MB</td>
+                    <td *ngIf="uploader.options.isHTML5" nowrap>{{item?.file?.size | number:'.2'}} B</td>
                     <td *ngIf="uploader.options.isHTML5">
                       <div class="progress" style="margin-bottom: 0;">
                         <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': item.progress + '%' }"></div>
@@ -40,7 +62,7 @@
                       <span *ngIf="item.isError"><i class="fa fa-close"></i></span>
                     </td>
                     <td nowrap>
-                      <button type="button" class="btn btn-success btn-sm" (click)="item.upload()" [disabled]="item.isReady || item.isUploading || item.isSuccess">
+                      <button type="button" class="btn btn-success btn-sm" (click)="uploadFile(item)" [disabled]="item.isReady || item.isUploading || item.isSuccess">
                             <span class="fa fa-upload"></span> Upload
                         </button>
                       <button type="button" class="btn btn-warning btn-sm" (click)="item.cancel()" [disabled]="!item.isUploading">

@@ -91,5 +91,8 @@
 @import "scss/core/rtl";
 // Custom styles
 @import "scss/custom";
+//------------------------分割---------------------
+// FileInput style
+@import "scss/fileinput";
 // Toastr Core
 @import "../node_modules/ng2-toastr/bundles/ng2-toastr.min.css";

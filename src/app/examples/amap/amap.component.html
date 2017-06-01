@@ -1,0 +1,11 @@
+<div class="container" [@flyIn]="'in'">
+  <accordion>
+    <accordion-group [isOpen]="status.isFirstOpen" #group>
+      <div accordion-heading>
+        Amap
+        <i class="pull-right float-xs-right fa" [ngClass]="{'fa-chevron-down': group?.isOpen,'fa-chevron-right':!group?.isOpen}"></i>
+      </div>
+      <div id="mapsize" tabindex="0"></div>
+    </accordion-group>
+  </accordion>
+</div>

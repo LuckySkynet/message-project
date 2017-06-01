@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FileuploadComponent } from './fileupload/fileupload.component';
 import { SmttableComponent } from './smttable/smttable.component';
 import { ExamplesComponent } from './examples.component';
+import { AmapComponent } from './amap/amap.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
       {
         path: 'smarttable',
         component: SmttableComponent
+      },
+      {
+        path: 'amap',
+        component: AmapComponent
       }
     ]
   },

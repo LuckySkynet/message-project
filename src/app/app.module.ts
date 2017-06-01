@@ -16,6 +16,7 @@ import { ToastModule } from 'ng2-toastr/ng2-toastr';
 //Animation Module
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoingRoutingModule,
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
-    ToastModule.forRoot(),
+    ToastModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
