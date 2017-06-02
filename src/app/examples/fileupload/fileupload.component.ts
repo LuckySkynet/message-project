@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild, ViewContainerRef, EventEmitter } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { ActivatedRoute, Route } from '@angular/router';
 import { flyIn } from '../../animations/fly-in';
 import { TabsetComponent } from 'ngx-bootstrap';
 import { FileUploader, FileItem } from 'ng2-file-upload';

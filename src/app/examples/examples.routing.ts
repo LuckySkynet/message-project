@@ -10,6 +10,7 @@ const routes: Routes = [
   {
     path: '',
     component: ExamplesComponent,
+    data: { title: 'examples' },
     children: [
       {
         path: '',
@@ -18,15 +19,18 @@ const routes: Routes = [
       },
       {
         path: 'fileupload',
-        component: FileuploadComponent
+        component: FileuploadComponent,
+        data: { title: 'fileupload' }
       },
       {
         path: 'smarttable',
-        component: SmttableComponent
+        component: SmttableComponent,
+        data: { title: 'smarttable' }
       },
       {
         path: 'amap',
-        component: AmapComponent
+        component: AmapComponent,
+        data: { title: 'amap' }
       }
     ]
   },
